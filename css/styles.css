@@ -1524,3 +1524,94 @@ footer::before {
 .gradient-border:hover::before {
   opacity: 1;
 }
+
+/* ========================================
+   Login Button
+   ======================================== */
+.nav-links .btn-login {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  margin-left: 0;
+}
+
+/* ========================================
+   Badges
+   ======================================== */
+.badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.5rem;
+  background: var(--aurora-gradient);
+  color: var(--neutral-0);
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
+.badge-concept {
+  background: var(--aurora-gradient-subtle);
+  border: 1px solid rgba(139, 92, 246, 0.4);
+  color: var(--primary-400);
+}
+
+/* ========================================
+   Legal Pages
+   ======================================== */
+.legal-content {
+  padding: 6rem 0;
+}
+
+.legal-document {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.legal-document h1 {
+  margin-bottom: 0.5rem;
+}
+
+.legal-document .effective-date {
+  color: var(--foreground-muted);
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.legal-document h2 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.legal-document h3 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.legal-document p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.legal-document ul,
+.legal-document ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.legal-document li {
+  margin-bottom: 0.5rem;
+  color: var(--foreground-muted);
+  line-height: 1.7;
+}
+
+.legal-document a {
+  color: var(--primary-400);
+}
+
+.legal-document a:hover {
+  color: var(--primary-300);
+}
