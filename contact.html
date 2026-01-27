@@ -22,8 +22,8 @@
             <a href="#" class="dropdown-toggle">Products</a>
             <div class="dropdown-menu">
               <a href="digital-security-planner.html">Digital Security Planner</a>
-              <a href="nexus-erp.html">Nexus ERP</a>
               <a href="aurora-verify.html">Aurora Verify</a>
+              <a href="nexus-erp.html">Nexus ERP</a>
             </div>
           </li>
           <li><a href="about.html">About</a></li>
@@ -97,7 +97,10 @@
 
         <div class="contact-form">
           <h3>Request a Demo</h3>
-          <form id="contact-form" action="#" method="POST">
+          <form id="contact-form" action="https://formsubmit.co/beta@auroranexus.ai" method="POST">
+            <input type="hidden" name="_subject" value="New Demo Request from Aurora Nexus Website">
+            <input type="hidden" name="_next" value="https://auroranexus.ai/contact.html?submitted=true">
+            <input type="text" name="_honey" style="display:none">
             <div class="form-row">
               <div class="form-group">
                 <label for="firstName">First Name *</label>
@@ -127,8 +130,8 @@
               <select id="interest" name="interest" required>
                 <option value="">Select a product...</option>
                 <option value="digital-security-planner">Digital Security Planner</option>
-                <option value="nexus-erp">Nexus ERP</option>
                 <option value="aurora-verify">Aurora Verify</option>
+                <option value="nexus-erp">Nexus ERP</option>
                 <option value="full-platform">Full Platform</option>
                 <option value="general">General Inquiry</option>
               </select>
@@ -178,14 +181,14 @@
       <div class="footer-content">
         <div class="footer-brand">
           <a href="index.html" class="logo">Aurora<span>Nexus</span></a>
-          <p>Empowering security integrators with purpose-built software. From design to operations, we're here to help you succeed.</p>
+          <p>Technology-powered products that solve real problems for security integrators. Focused tools, not bloated software.</p>
         </div>
         <div class="footer-column">
           <h4>Products</h4>
           <ul>
             <li><a href="digital-security-planner.html">Digital Security Planner</a></li>
-            <li><a href="nexus-erp.html">Nexus ERP</a></li>
             <li><a href="aurora-verify.html">Aurora Verify</a></li>
+            <li><a href="nexus-erp.html">Nexus ERP</a></li>
           </ul>
         </div>
         <div class="footer-column">
@@ -221,5 +224,17 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    // Show success message if form was submitted
+    if (window.location.search.includes('submitted=true')) {
+      const form = document.getElementById('contact-form');
+      const successMsg = document.createElement('div');
+      successMsg.className = 'form-success';
+      successMsg.innerHTML = '<h3>Thank You!</h3><p>Your message has been sent. We\'ll get back to you within 24 hours.</p>';
+      form.parentNode.replaceChild(successMsg, form);
+      // Clean up URL
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  </script>
 </body>
 </html>

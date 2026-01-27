@@ -1126,6 +1126,24 @@ section {
   background-size: 1rem;
 }
 
+.form-success {
+  background: var(--aurora-gradient-subtle);
+  border: 1px solid var(--accent-500);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  text-align: center;
+}
+
+.form-success h3 {
+  color: var(--accent-400);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.form-success p {
+  color: var(--foreground-muted);
+}
+
 /* ========================================
    About Page
    ======================================== */
@@ -1555,6 +1573,12 @@ footer::before {
   background: var(--aurora-gradient-subtle);
   border: 1px solid rgba(139, 92, 246, 0.4);
   color: var(--primary-400);
+}
+
+.badge-development {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(6, 182, 212, 0.15) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: var(--success-500);
 }
 
 /* ========================================
