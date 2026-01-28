@@ -12,16 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
       document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
     });
 
-    // Close menu when clicking on a link (except dropdown toggles)
+    // Close menu when clicking on a link
     navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', function(e) {
-        // Handle dropdown toggle on mobile
-        if (window.innerWidth <= 768 && this.classList.contains('dropdown-toggle')) {
-          e.preventDefault();
-          this.closest('.dropdown').classList.toggle('active');
-          return;
-        }
-
+      link.addEventListener('click', function() {
         if (window.innerWidth <= 768) {
           mobileToggle.classList.remove('active');
           navLinks.classList.remove('active');
